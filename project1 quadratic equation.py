@@ -12,5 +12,7 @@ d = (b**2) - (4*a*c)
 #finding solution
 x1=(-b-cmath.sqrt(d))/(2*a)
 x2=(-b+cmath.sqrt(d))/(2*a)
-
-print("answer of this quadratic equation are {0} and {1}".format(x1,x2))
+if d>0:
+    print("answer of this quadratic equation are {0} and {1}".format(x1,x2))
+else:
+     print("no real roots exists.")
