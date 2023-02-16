@@ -12,3 +12,19 @@ elif a.isalnum():
     
 else:
     print("The input is in Special Character.")
+def int_to_word(character):
+  character = str(character) if type(character)!=str else None
+  conversion_dict = {
+    '1': 'ONE',
+    '2': 'TWO',
+    '3': 'THREE',
+    '4': 'FOUR',
+    '5': 'FIVE',
+    '6': 'SIX',
+    '7': 'SEVEN',
+    '8': 'EIGHT',
+    '9': 'NINE'
+  }
+  return conversion_dict[character] if character.isnumeric() else 'Character not numeric'
+#enter your digit here
+int_to_word()
